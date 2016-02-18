@@ -10,13 +10,24 @@ with sr.Microphone() as source:
 try:
 	equation = r.recognize_google(audio).lower()
 	print(equation)
+	equation = equation.replace("plus", "+")
+	equation = equation.replace("added to", "+")
+	equation = equation.replace("minus", "-")
+	equation = equation.replace("subracted by", "-")
 	equation = equation.replace("divided by", "/")
 	equation = equation.replace("multiplied by", "*")
 	equation = equation.replace("times", "/")
+	equation = equation.replace("in parentheses", "(")
+	equation = equation.replace("end parentheses", ")")
+	equation = equation.replace("parentheses", ")")
 	try:
 		print(eval(equation))
 	except:
-		print("Unable to evaulate equation")
+		try:
+			equation = equation + ")"
+			eval(equation)
+		except:
+			print("Unable to evaulate equation")
 except sr.UnknownValueError:
     print("Google Speech Recognition could not understand audio")
 except sr.RequestError as e:
