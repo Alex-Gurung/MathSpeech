@@ -5,12 +5,14 @@ r = sr.Recognizer()
 with sr.Microphone() as source:
 	print("Input equation:")
 	audio = r.listen(source)
-
+dict = {"plus": "+", "added to": "+", "minus":"-", "subracted by": "-", "divided by":"/", "multiplied by" : "*", "x" : "*", "times":"*", "parenthesis": "parentheses", "in parentheses" : "(", "end parentheses" : ")", "parentheses" : ")", "negative": "-", "to the power": "**"}
 #Below are the try and except blocks for google speech recognition
 try:
 	equation = r.recognize_google(audio).lower()
 	print(equation)
-	equation = equation.replace("plus", "+")
+	for key in dict:
+		equation = equation.replace(key, dict[key])
+	'''equation = equation.replace("plus", "+")
 	equation = equation.replace("added to", "+")
 	equation = equation.replace("minus", "-")
 	equation = equation.replace("subracted by", "-")
@@ -23,7 +25,8 @@ try:
 	equation = equation.replace("end parentheses", ")")
 	equation = equation.replace("parentheses", ")")
 	equation = equation.replace("negative", "-")
-	equation = equation.replace("to the power", "**")
+	equation = equation.replace("to the power", "**")'''
+
 	try:
 		ev = eval(equation)
 		print(equation)
