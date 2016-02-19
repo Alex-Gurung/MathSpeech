@@ -16,16 +16,24 @@ try:
 	equation = equation.replace("subracted by", "-")
 	equation = equation.replace("divided by", "/")
 	equation = equation.replace("multiplied by", "*")
+	equation = equation.replace("x", "*")
 	equation = equation.replace("times", "/")
+	equation = equation.replace("parenthesis", "parentheses")
 	equation = equation.replace("in parentheses", "(")
 	equation = equation.replace("end parentheses", ")")
 	equation = equation.replace("parentheses", ")")
+	equation = equation.replace("negative", "-")
+	equation = equation.replace("to the power", "**")
 	try:
-		print(eval(equation))
+		ev = eval(equation)
+		print(equation)
+		print(ev)
 	except:
 		try:
 			equation = equation + ")"
-			eval(equation)
+			ev = eval(equation)
+			print(equation)
+			print(ev)
 		except:
 			print("Unable to evaulate equation")
 except sr.UnknownValueError:
