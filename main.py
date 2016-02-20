@@ -9,23 +9,10 @@ dict = {"plus": "+", "added to": "+", "minus":"-", "subracted by": "-", "divided
 #Below are the try and except blocks for google speech recognition
 try:
 	equation = r.recognize_google(audio).lower()
+	#equation = raw_input("Input equation: ") # For typing in equation
 	print(equation)
 	for key in dict:
 		equation = equation.replace(key, dict[key])
-	'''equation = equation.replace("plus", "+")
-	equation = equation.replace("added to", "+")
-	equation = equation.replace("minus", "-")
-	equation = equation.replace("subracted by", "-")
-	equation = equation.replace("divided by", "/")
-	equation = equation.replace("multiplied by", "*")
-	equation = equation.replace("x", "*")
-	equation = equation.replace("times", "/")
-	equation = equation.replace("parenthesis", "parentheses")
-	equation = equation.replace("in parentheses", "(")
-	equation = equation.replace("end parentheses", ")")
-	equation = equation.replace("parentheses", ")")
-	equation = equation.replace("negative", "-")
-	equation = equation.replace("to the power", "**")'''
 
 	try:
 		ev = eval(equation)
