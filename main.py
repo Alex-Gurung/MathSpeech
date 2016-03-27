@@ -13,7 +13,7 @@ try:
 	equation = r.recognize_google(audio).lower()
 	#equation = raw_input("Input equation: ") # For typing in equation
 	print(equation)
-	for key in dict:
+	for key in dict: #Goes through the equation replacing any phrases with their mathematical equivalents
 		equation = equation.replace(key, dict[key])
 
 	try:
