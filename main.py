@@ -7,7 +7,7 @@ with sr.Microphone() as source:
 	audio = r.listen(source) #Sets a variable called audio to the audio input, to be later interpreted
 
 dict = {"what is": " ", "plus": "+", "added to": "+", "minus":"-", "subracted by": "-", "divided by":"/", "multiplied by" : "*", "x" : "*", "times":"*","parenthesis": "parentheses", "in parentheses" : "(", "end parentheses" : ")", "parentheses" : ")", "negative": "-","to the power" : "**"}
-#
+
 #Below are the try and except blocks for google speech recognition
 
 try:
