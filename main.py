@@ -17,7 +17,7 @@ try:
 		equation = equation.replace(key, dict[key])
 
 	try:
-		ev = eval(equation)
+		ev = eval(equation) #eval is a standard evaluating function in python. Later it should be replaced with a manual evaluator
 		print(equation)
 		print(ev)
 	except:
