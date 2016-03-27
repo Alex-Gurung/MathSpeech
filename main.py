@@ -21,7 +21,7 @@ try:
 		ev = eval(equation) #eval is a standard evaluating function in python. Later it should be replaced with a manual evaluator
 		print(equation)
 		print(ev)
-	except:
+	except: #In case the input doesn't explicitly state an end parentheses, adds one
 		try:
 			equation = equation + ")"
 			ev = eval(equation)
