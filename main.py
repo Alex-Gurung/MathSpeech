@@ -10,7 +10,7 @@ dict = {"what is": " ", "plus": "+", "added to": "+", "minus":"-", "subracted by
 #Below are the try and except blocks for google speech recognition
 
 try:
-	equation = r.recognize_google(audio).lower()
+	equation = r.recognize_google(audio).lower() #Takes whatever the speech interpretor took the input as and makes it lower case to fit the dictionary
 	#equation = raw_input("Input equation: ") # For typing in equation
 	print(equation)
 	for key in dict: #Goes through the equation replacing any phrases with their mathematical equivalents
