@@ -30,6 +30,6 @@ try:
 		except:
 			print("Unable to evaulate equation")
 except sr.UnknownValueError:
-    print("Google Speech Recognition could not understand audio")
+    print("Google Speech Recognition could not understand audio") #The two excepts below are the standard for google speech recognition
 except sr.RequestError as e:
     print("Could not request results from Google Speech Recognition service; {0}".format(e))
