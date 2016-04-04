@@ -1,4 +1,4 @@
-import speech_recognition as sr
+import speech_recognition as sr #Import the speech recognition library
 #Setup speech
 r = sr.Recognizer()
 #Code to get speech
