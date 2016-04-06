@@ -23,8 +23,8 @@ try:
 		print(ev)
 	except: #In case the input doesn't explicitly state an end parentheses, adds one
 		try:
-			equation = equation + ")"
-			ev = eval(equation)
+			equation = equation + ")" #Add a paren to the end
+			ev = eval(equation) 
 			print(equation)
 			print(ev)
 		except:
