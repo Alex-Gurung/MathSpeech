@@ -24,7 +24,7 @@ try:
 	except: #In case the input doesn't explicitly state an end parentheses, adds one
 		try:
 			equation = equation + ")" #Add a paren to the end
-			ev = eval(equation) 
+			ev = eval(equation) #Attemps to evaluation again
 			print(equation)
 			print(ev)
 		except:
