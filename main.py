@@ -3,7 +3,7 @@ import speech_recognition as sr #Import the speech recognition library
 r = sr.Recognizer()
 #Code to get speech
 with sr.Microphone() as source:
-	print("Input equation:")
+	print("Say your equation:")
 	audio = r.listen(source) #Sets a variable called audio to the audio input, to be later interpreted
 
 dict = {"what is": " ", "plus": "+", "added to": "+", "minus":"-", "subracted by": "-", "divided by":"/", "multiplied by" : "*", "x" : "*", "times":"*","parenthesis": "parentheses", "in parentheses" : "(", "end parentheses" : ")", "parentheses" : ")", "negative": "-","to the power" : "**", "one" : "1", "two" : "2", "three" : "3", "four" : "4", "five" : "5", "six" : "6", "seven" : "7", "eight" : "8", "nine" : "9"}
@@ -24,7 +24,7 @@ try:
 	except: #In case the input doesn't explicitly state an end parentheses, adds one
 		try:
 			equation = equation + ")" #Add a paren to the end
-			ev = eval(equation) #Attemps to evaluation again
+			ev = eval(equation) #Attemps to evaluate again
 			print(equation)
 			print(ev)
 		except:
