@@ -1,8 +1,10 @@
 import speech_recognition as sr #Import the speech recognition library
+#from sympy import * #Code doesn't work right now because I haven't isntalled the library, but more edits are to come
 #Setup speech
 r = sr.Recognizer()
 #Code to get speech
 with sr.Microphone() as source:
+	#print("Do you want to solve an expression or solve for a variable?")
 	print("Say your equation:")
 	#audio = input("Input your equation")
 	audio = r.listen(source) #Sets a variable called audio to the audio input, to be later interpreted
