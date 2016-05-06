@@ -8,6 +8,11 @@ with sr.Microphone() as source:
 	print("Say your equation:")
 	#audio = input("Input your equation")
 	audio = r.listen(source) #Sets a variable called audio to the audio input, to be later interpreted
+######################################
+#EQUATION CODE
+#x = Symbol('x')
+#if "y" in equation:
+#	y = Symbol('y')
 
 dict = {"what is": " ", "plus": "+", "added to": "+", "minus":"-", "subracted by": "-", "divided by":"/", "multiplied by" : "*", "x" : "*", "times":"*","parenthesis": "parentheses", "in parentheses" : "(", "end parentheses" : ")", "parentheses" : ")", "negative": "-","to the power" : "**", "one" : "1", "two" : "2", "three" : "3", "four" : "4", "five" : "5", "six" : "6", "seven" : "7", "eight" : "8", "nine" : "9"}
 
