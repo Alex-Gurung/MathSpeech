@@ -11,8 +11,7 @@ with sr.Microphone() as source:
 ######################################
 #EQUATION CODE
 #x = Symbol('x')
-#if "y" in equation:
-#	y = Symbol('y')
+#print(solve(equation, x))
 
 dict = {"what is": " ", "plus": "+", "added to": "+", "minus":"-", "subracted by": "-", "divided by":"/", "multiplied by" : "*", "x" : "*", "times":"*","parenthesis": "parentheses", "in parentheses" : "(", "end parentheses" : ")", "parentheses" : ")", "negative": "-","to the power" : "**", "one" : "1", "two" : "2", "three" : "3", "four" : "4", "five" : "5", "six" : "6", "seven" : "7", "eight" : "8", "nine" : "9"}
 
