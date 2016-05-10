@@ -1,15 +1,44 @@
+what is
+plus
 added to
-in parentheses
+minus
+subracted by
+divided by
 multiplied by
+x
+times
+parenthesis
+in parentheses
 end parentheses
 parentheses
-what is
 negative
-times
-plus
+negative
 to the power
-divided by
-parenthesis
-x
-subracted by
-minus
+one
+two
+three
+four
+five
+six
+seven
+eight
+nine
+ten
+eleven
+twelve
+thirteen
+fifteen
+sixteen
+seventeen
+eighteen
+nineteen
+twenty
+thirty
+fourty
+fifty
+sixty
+seventy
+eighty
+ninety
+hundred
+thousand
