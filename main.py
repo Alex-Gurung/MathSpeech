@@ -15,6 +15,10 @@ with sr.Microphone() as source:
 #x = Symbol('x')
 #print(solve(equation, x))
 #equation.replace("y = ", "")
+################SAMPLE CODE######################
+#limit(sin(x)/x, x, 0) #LIMIT
+#integrate(exp(x)*sin(x) + exp(x)*cos(x), x) #INTEGRAL
+#diff(sin(x)*exp(x), x) #DERIVATIVE
 
 dict = {"what is": " ", "plus": "+", "added to": "+", "minus":"-", "subracted by": "-", "divided by":"/", "multiplied by" : "*", "x" : "*", "times":"*","parenthesis": "parentheses", "in parentheses" : "(", "end parentheses" : ")", "parentheses" : ")", "negative": "-","to the power" : "**", "one" : "1", "two" : "2", "three" : "3", "four" : "4", "five" : "5", "six" : "6", "seven" : "7", "eight" : "8", "nine" : "9"}
 
