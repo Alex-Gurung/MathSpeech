@@ -21,8 +21,9 @@ with sr.Microphone() as source:
 #diff(sin(x)*exp(x), x) #DERIVATIVE
 
 dict = {"what is": " ", "plus": "+", "added to": "+", "minus":"-", "subracted by": "-", "divided by":"/", "multiplied by" : "*", "x" : "*", "times":"*","parenthesis": "parentheses", "in parentheses" : "(", "end parentheses" : ")", "parentheses" : ")", "negative": "-","to the power" : "**", "one" : "1", "two" : "2", "three" : "3", "four" : "4", "five" : "5", "six" : "6", "seven" : "7", "eight" : "8", "nine" : "9"}
-#keys = open('keys.txt', r)
-#results = open('results.txt', r)
+
+#keys = [line.rstrip('\n') for line in open('keys.txt')]
+#results = [line.rstrip('\n') for line in open('keys.txt')]
 #Below are the try and except blocks for google speech recognition
 
 try:
