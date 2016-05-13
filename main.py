@@ -30,7 +30,7 @@ try:
 	equation = r.recognize_google(audio).lower() #Takes whatever the speech interpretor took the input as and makes it lower case to fit the dictionary
 	#equation = raw_input("Input equation: ") # For typing in equation
 	print(equation) #Prints the equation, check to see if it recognized your speech correctly
-	for i in range(len(keys): #Goes through the equation replacing any phrases with their mathematical equivalents
+	for i in range(len(keys)): #Goes through the equation replacing any phrases with their mathematical equivalents
 		equation = equation.replace(keys[i], results[i])
 
 	try:
