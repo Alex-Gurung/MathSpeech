@@ -27,6 +27,7 @@ ten
 eleven
 twelve
 thirteen
+fourteen
 fifteen
 sixteen
 seventeen
@@ -40,5 +41,3 @@ sixty
 seventy
 eighty
 ninety
-hundred
-thousand
