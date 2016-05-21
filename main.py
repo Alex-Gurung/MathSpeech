@@ -43,7 +43,7 @@ try:
 			print(ev) #Prints the evaluation
 		except:
 			print("Unable to evaulate equation") #If all fails, just give up
-except sr.UnknownValueError:
+except sr.UnknownValueError: #This is the most common error, try audio again, making certain the program can clearly hear you
     print("Google Speech Recognition could not understand audio") #The two excepts below are the standard for google speech recognition
 except sr.RequestError as e:
     print("Could not request results from Google Speech Recognition service; {0}".format(e))
