@@ -14,7 +14,8 @@ with sr.Microphone() as source: #Need this block every time you want to input sp
 #equation = input("Input your equation: \n") #Uncomment to test this code
 #x = Symbol('x')
 #print(solve(equation, x))
-#equation.replace("y = ", "")
+#equation.replace("y", "")
+#equatino.replace("=", "")
 ################SAMPLE CODE######################
 #limit(sin(x)/x, x, 0) #LIMIT
 #integrate(exp(x)*sin(x) + exp(x)*cos(x), x) #INTEGRAL
