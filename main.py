@@ -36,7 +36,7 @@ try:
 
 	try:
 		ev = eval(equation) #eval is a standard evaluating function in python. Later it should be replaced with a manual evaluator
-		print(equation)
+		print(equation) #Prints the equation, given that it can be evaluated
 		print(ev)
 	except: #In case the input doesn't explicitly state an end parentheses, adds one
 		try:
