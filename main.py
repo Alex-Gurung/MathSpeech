@@ -42,7 +42,7 @@ try:
 		try:
 			equation = equation + ")" #Add a paren to the end
 			ev = eval(equation) #Attemps to evaluate again
-			print(equation)
+			print(equation) #Prints the equation
 			print(ev) #Prints the evaluation
 		except:
 			print("Unable to evaulate equation") #If all fails, just give up
