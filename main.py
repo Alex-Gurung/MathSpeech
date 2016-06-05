@@ -1,7 +1,7 @@
 import speech_recognition as sr #Import the speech recognition library
 from sympy import * #Necessary for commented out code, but comment this import if not using them
 #Setup speech
-r = sr.Recognizer()
+r = sr.Recognizer() #Creates a variable to listen to the audio
 #Code to get speech
 
 with sr.Microphone() as source: #Need this block every time you want to input speech
@@ -29,7 +29,6 @@ results = [line.rstrip('\n') for line in open('results.txt')] #Same thing, but f
 
 try:
 	equation = r.recognize_google(audio).lower() #Takes whatever the speech interpretor took the input as and makes it lower case to fit the dictionary
-	#equation = raw_input("Input equation: ") # For typing in equation
 	print(equation) #Prints the equation, check to see if it recognized your speech correctly
 	for i in range(len(keys)): #Goes through the equation replacing any phrases with their mathematical equivalents
 		equation = equation.replace(keys[i], results[i])
