@@ -22,6 +22,8 @@ with sr.Microphone() as source: #Need this block every time you want to input sp
 #limit(sin(x)/x, x, 0) #LIMIT
 #integrate(exp(x)*sin(x) + exp(x)*cos(x), x) #INTEGRAL
 #diff(sin(x)*exp(x), x) #DERIVATIVE
+#if ("equation" in equation):
+#	##Switch to equation solvers, else, continue with basic solving
 
 keys = [line.rstrip('\n') for line in open('keys.txt')] #Puts every line in keys.txt in a list
 results = [line.rstrip('\n') for line in open('results.txt')] #Same thing, but for results.txt
