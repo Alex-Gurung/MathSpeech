@@ -25,7 +25,7 @@ with sr.Microphone() as source: #Need this block every time you want to input sp
 #if ("equation" in equation):
 #	##Switch to equation solvers, else, continue with basic solving
 #else:
-#	
+#	#do the eval() stuff
 
 keys = [line.rstrip('\n') for line in open('keys.txt')] #Puts every line in keys.txt in a list
 results = [line.rstrip('\n') for line in open('results.txt')] #Same thing, but for results.txt
