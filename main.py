@@ -11,8 +11,9 @@ with sr.Microphone() as source: #Need this block every time you want to input sp
 	#x = Symbol('x')
 	#diff(audio, x)						#For direct derivative typed input
 	audio = r.listen(source) #Sets a variable called audio to the audio input, to be later interpreted
+
 ######################################
-#EQUATION CODE
+#EQUATION CODE FOR FUTURE WORK
 #equation = input("Input your equation: \n") #Uncomment to test this code
 #x = Symbol('x')
 #print(solve(equation, x))
