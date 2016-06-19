@@ -37,7 +37,7 @@ try:
 	print(equation) #Prints the equation, check to see if it recognized your speech correctly
 	for i in range(len(keys)): #Goes through the equation replacing any phrases with their mathematical equivalents
 		equation = equation.replace(keys[i], results[i])
-
+	equation = equation.replace("and", "").strip()
 	try:
 		ev = eval(equation) #eval is a standard evaluating function in python. Later it should be replaced with a manual evaluator
 		print(equation) #Prints the equation, given that it can be evaluated
