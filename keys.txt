@@ -41,3 +41,5 @@ sixty
 seventy
 eighty
 ninety
+and
+  
