@@ -16,7 +16,7 @@ with sr.Microphone() as source: #Need this block every time you want to input sp
 #EQUATION CODE FOR FUTURE WORK
 #equation = input("Input your equation: \n") #Uncomment to test this code
 #x = Symbol('x')
-#print(solve(equation, x)) #Solves the equation with a variable 'x' NOTE: must use 'x' as variable, and only x
+#print(solve(equation, x)) #Solves the equation with a variable 'x' NOTE: must use 'x' and only 'x' as variable
 #equation.replace("y", "")
 #equation.replace("=", "")
 ################SAMPLE CODE######################
