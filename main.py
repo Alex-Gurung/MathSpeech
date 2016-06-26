@@ -48,8 +48,8 @@ try:
 			ev = eval(equation) #Attemps to evaluate again
 			print(equation) #Prints the equation
 			print(ev) #Prints the evaluation
-		except:
-			print("Unable to evaulate equation") #If it isn't just missing an end paren, say unable to evaluate
+		except: #If it isn't just missing an end paren... 
+			print("Unable to evaulate equation") #say unable to evaluate
 except sr.UnknownValueError: #This is the most common error, try audio again, making certain the program can clearly hear you
     print("Google Speech Recognition could not understand audio") #The two excepts below are the standard for google speech recognition
 except sr.RequestError as e: #Make sure to keep these excepts whenever calling recognize_google(audio)
