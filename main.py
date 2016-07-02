@@ -23,7 +23,7 @@ with sr.Microphone() as source: #Need this block every time you want to input sp
 #limit(sin(x)/x, x, 0) #LIMIT
 #integrate(exp(x)*sin(x) + exp(x)*cos(x), x) #INTEGRAL
 #diff(sin(x)*exp(x), x) #DERIVATIVE
-#if ("equation" in equation):
+#if ("equation" in equation): 	###May not use
 #	##Switch to equation solvers, else, continue with basic solving
 #else:
 #	#do the eval() stuff
