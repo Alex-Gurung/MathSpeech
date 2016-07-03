@@ -13,7 +13,7 @@ def eqSolver:
 		#x = Symbol('x')
 		#diff(audio, x)						#For direct derivative typed input
 		audio = r.listen(source) #Sets a variable called audio to the audio input, to be later interpreted
-	z = Symbol('z')
+	z = Symbol('z') #Because speech recognition sometimes uses 'x' as 'times', z must be used
 
 	try:
 		equation = r.recognize_google(audio).lower() #Takes whatever the speech interpretor took the input as and makes it lower case to fit the dictionary
