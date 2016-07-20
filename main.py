@@ -1,4 +1,5 @@
 import speech_recognition as sr #Import the speech recognition library
+from eqSolver import eqSolver
 from sympy import * #Necessary for commented out code, but comment this import if not using them
 #Setup speech
 r = sr.Recognizer() #Creates a variable to listen to the audio
@@ -25,6 +26,7 @@ with sr.Microphone() as source: #Need this block every time you want to input sp
 #diff(sin(x)*exp(x), x) #DERIVATIVE
 #if ("equation" in equation): 	###May not use
 #	##Switch to equation solvers, else, continue with basic solving
+#	eqSolver()
 #else:
 #	#do the eval() stuff
 

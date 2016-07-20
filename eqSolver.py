@@ -1,7 +1,7 @@
 import speech_recognition as sr #Import the speech recognition library
 from sympy import * #Necessary for commented out code, but comment this import if not using them
 
-def eqSolver:
+def eqSolver():
 	#Setup speech
 	r = sr.Recognizer() #Creates a variable to listen to the audio
 	#Code to get speech
