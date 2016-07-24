@@ -30,7 +30,7 @@ with sr.Microphone() as source: #Need this block every time you want to input sp
 #else:
 #	#do the eval() stuff
 
-keys = [line.rstrip('\n') for line in open('keys.txt')] #Puts every line in keys.txt in a list
+keys = [line.rstrip('\n') for line in open('keys.txt')] #Puts every line in keys.txt in a list, split by "\n"
 results = [line.rstrip('\n') for line in open('results.txt')] #Same thing, but for results.txt
 #Below are the try and except blocks for google speech recognition
 
@@ -45,7 +45,7 @@ try:
 		print(equation) #Prints the equation, given that it can be evaluated
 		print(ev) #Prints the evaluated output
 	except: #In case the input doesn't explicitly state an end parentheses, adds one
-		try:
+		try:  # THIS SHOULD BE CHANGED LATER
 			equation = equation + ")" #Add a paren to the end
 			ev = eval(equation) #Attemps to evaluate again
 			print(equation) #Prints the equation
