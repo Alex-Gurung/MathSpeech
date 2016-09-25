@@ -1,4 +1,5 @@
 import speech_recognition as sr #Import the speech recognition library
+import wordToNum #To convert nums to integers
 #from eqSolver import eqSolver
 from sympy import * #Necessary for commented out code, but comment this import if not using them
 #Setup speech
@@ -40,6 +41,9 @@ try:
 	for i in range(len(keys)): #Goes through the equation replacing any phrases with their mathematical equivalents
 		equation = equation.replace(keys[i], results[i])
 	equation = equation.strip() #Removes unnecessary splaces at ends(shouldn't change anything)
+	eqSplit = equation.split()
+	listNums = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight","nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen","sixteen", "seventeen", "eighteen", "nineteen","", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety", "hundred", "thousand", "million", "billion", "trillion"]
+	
 	try:
 		ev = eval(equation) #eval is a standard evaluating function in python. Later it should be replaced with a manual evaluator
 		print(equation) #Prints the equation, given that it can be evaluated

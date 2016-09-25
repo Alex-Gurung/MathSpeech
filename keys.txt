@@ -14,32 +14,5 @@ parentheses
 negative
 negative
 to the power
-one
-two
-three
-four
-five
-six
-seven
-eight
-nine
-ten
-eleven
-twelve
-thirteen
-fourteen
-fifteen
-sixteen
-seventeen
-eighteen
-nineteen
-twenty
-thirty
-fourty
-fifty
-sixty
-seventy
-eighty
-ninety
 and
   
